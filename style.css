@@ -35,7 +35,7 @@
     height:4rem;
 }
 
-#nav-button{
+.nav-button{
     color:#D5DDF5;
     background: #262626E5;
     height: 3rem;
@@ -101,6 +101,13 @@
 
 #head3{
     color:#D5DDF5;
+}
+
+.modal-body{
+    background: linear-gradient(to right,#4C3481,#0E1947,#0E101E);
+    color: white;
+    line-height: 2rem;
+    letter-spacing: .07rem;
 }
 
 /* services */
@@ -214,6 +221,20 @@
 
 /* Responsiveness */
 
+@media only screen and (max-width: 1500px) {
+    #home{
+        height: 125vh;
+    }
+
+    #services{
+        height: 150vh;   
+    }
+
+    #questions{
+        height: 125vh;   
+    }
+}
+
 @media only screen and (max-width: 1400px) {
     #content img{
         width: 100%;
@@ -232,6 +253,10 @@
     #services{
         height: 150vh;   
     }
+
+    #questions{
+        height: 110vh;   
+    }
 }
 
 @media only screen and (max-width: 994px) {
@@ -240,11 +265,11 @@
     }
     
     #services{
-        height: 200vh;
+        height: 100vh;
     }
 
     #questions{
-        height: 150vh;   
+        height: 100vh;   
     }
 
     #head1{
@@ -277,7 +302,7 @@
     }
 
     #questions{
-        height: 100vh;   
+        height: 130vh;   
     }
 
     #head1{
@@ -295,6 +320,32 @@
     .rowContents{
         width: 90%;
         margin-left: 5%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .TOC{
+        font-size: 13px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #questions p{
+        margin-left: 5%;
+    }
+
+    #questions h1{
+        margin-left: 5%;
+    }
+
+    #questions h5{
+        margin-left: 5%;
+    }
+
+    .nav-button{
+        height: 2rem;
+        width: 5.5rem;
+        font-size: .7rem;
     }
 }
 
@@ -324,8 +375,9 @@
     }
 
     .TOC{
-        font-size: 12px;
-        margin-left: 15px;
+        font-size: 10px;
+        display: flex;
+        justify-content: space-between;
     }
 
     .rowContents{
@@ -344,24 +396,10 @@
     #questions h5{
         margin-left: 5%;
     }
-}
 
-@media only screen and (max-width: 500px) {
-    .TOC{
-        font-size: 14px;
-        margin-left: 15px;
-    }
-
-    #questions p{
-        margin-left: 5%;
-    }
-
-    #questions h1{
-        margin-left: 5%;
-    }
-
-    #questions h5{
-        margin-left: 5%;
+    .nav-button{
+        height: 2rem;
+        width: 5.5rem;
+        font-size: .7rem;
     }
 }
-
